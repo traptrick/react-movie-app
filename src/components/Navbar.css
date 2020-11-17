@@ -1,0 +1,27 @@
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+nav {
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  text-align: center;
+}
+nav h1 {
+  margin-left: 10px;
+}
+nav p {
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 1px;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}

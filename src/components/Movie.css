@@ -1,0 +1,25 @@
+.movie__card {
+  border: 1px 1px black;
+  margin: 1rem auto;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100vh;
+  height: fit-content;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 2px 3px teal;
+  background-color: rgba(245, 245, 245, 0.438);
+  font-size: larger;
+}
+.head {
+  padding: 0.5rem;
+}
+.details {
+  padding: 0.5rem;
+}
+.plot-style {
+  color: rgb(255, 0, 0);
+  word-break: break-word;
+  text-decoration: white underline;
+}
