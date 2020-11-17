@@ -1,0 +1,19 @@
+.box {
+  margin: 0 auto;
+  width: 300px;
+  word-break: break-word;
+  border: 1px white solid;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rows {
+  max-height: 400px;
+}
+
+.para {
+  background-color: white;
+  text-align: center;
+}
