@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+## Movie info app written in reactJS
+
+Live Demo :-
+[https://movie-bible.000webhostapp.com/](https://movie-bible.000webhostapp.com/)
+
+Screenshot Of The App :-
+![screenshot](/ss.png)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
