@@ -7,6 +7,7 @@ function Movie({
   Released,
   Actors,
   Director,
+  Language,
   Genre,
   imdbRating,
   Plot,
@@ -24,6 +25,8 @@ function Movie({
           <p>Actors : {Actors}</p>
           <br />
           <p>Director : {Director}</p>
+          <br />
+          <p>Language : {Language}</p>
           <br />
           <p>Genre : {Genre}</p>
           <br />

@@ -23,3 +23,37 @@
   word-break: break-word;
   text-decoration: white underline;
 }
+
+@media screen and (max-width: 768px) {
+  .movie__card {
+    padding: 0.7rem;
+    width: 90vw;
+    height: fit-content;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .head img {
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .movie__card {
+    padding: 0.4rem;
+    width: 80vw;
+    height: fit-content;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .head img {
+    max-height: fit-content;
+    max-width: 100%;
+    border-radius: 5px;
+  }
+}
