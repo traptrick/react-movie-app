@@ -26,14 +26,14 @@ function App() {
   const collecting = async () => {
     try {
       const response = await fetch(
-        `http://www.omdbapi.com/?t=${query}&apikey=133e6fdd`
+        `https://www.omdbapi.com/?t=${query}&apikey=133e6fdd`
       );
       const result = await response.json();
       setItem(result);
 
       //other hits
       const other = await fetch(
-        `http://www.omdbapi.com/?s=${query}&apikey=133e6fdd`
+        `https://www.omdbapi.com/?s=${query}&apikey=133e6fdd`
       );
       const hits = await other.json();
       setMov(hits.Search);
