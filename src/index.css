@@ -1,5 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
 
+/* custom scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(251, 255, 0, 0.493);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #f7e17a;
+  border-radius: 9px;
+}
+
 body {
   margin: 0;
   font-family: "Karla", verdana, sans-serif;

@@ -7,7 +7,7 @@ import List from "./List";
 function App() {
   const [item, setItem] = useState([]);
   const [search, setSearch] = useState("");
-  const [query, setQuery] = useState("dark");
+  const [query, setQuery] = useState("");
 
   //state for other
   const [mov, setMov] = useState([]);
@@ -37,7 +37,6 @@ function App() {
       );
       const hits = await other.json();
       setMov(hits.Search);
-      console.log(hits.Search);
     } catch (error) {
       console.log(`try again! you misspelled something ${error}`);
     }
@@ -70,6 +69,7 @@ function App() {
         Released={item.Released}
         Actors={item.Actors}
         Director={item.Director}
+        Language={item.Language}
         Genre={item.Genre}
         imdbRating={item.imdbRating}
         Plot={item.Plot}
@@ -78,14 +78,15 @@ function App() {
       <br />
       <h3 className="similar">Similar Named Hits For Your Search :-</h3>
       <div className="styled-row">
-        {mov.map((images) => (
-          <List
-            key={images.imdbID}
-            img={images.Poster}
-            name={images.Title}
-            year={images.Year}
-          />
-        ))}
+        {mov &&
+          mov.map((images) => (
+            <List
+              key={images.imdbID}
+              img={images.Poster}
+              name={images.Title}
+              year={images.Year}
+            />
+          ))}
       </div>
     </div>
   );
